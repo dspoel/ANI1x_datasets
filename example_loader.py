@@ -1,7 +1,7 @@
 import dataloader as dl
 
 # Path to the ANI-1x data set
-path_to_h5file = '/home/jujuman/Scratch/Research/ANI-1x1ccx/FINAL_CLEANED_DATA/ani1x-20190925_rz.h5'
+path_to_h5file = 'ani1x.h5'
 
 # List of keys to point to requested data
 data_keys = ['wb97x_dz.energy','wb97x_dz.forces'] # Original ANI-1x data (https://doi.org/10.1063/1.5023802)

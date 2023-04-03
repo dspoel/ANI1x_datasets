@@ -13,7 +13,7 @@ def iter_data_buckets(h5filename, keys=['wb97x_dz.energy']):
     with h5py.File(h5filename, 'r') as f:
         for grp in f.values():
             Nc = grp['coordinates'].shape[0]
-            mask = np.ones(Nc, dtype=np.bool)
+            mask = np.ones(Nc, dtype=bool)
             data = dict((k, grp[k][()]) for k in keys)
             for k in keys:
                 v = data[k].reshape(Nc, -1)
